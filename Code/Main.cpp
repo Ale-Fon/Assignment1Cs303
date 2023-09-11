@@ -77,8 +77,7 @@ int main() {
     case 'C':
      // This will add a new value to a row which the user entered.
       //try{
-        cout << "Which row would you like to add the new value to (ex: 0 10 or 1 "
-                "4): ";
+        cout << "Which row would you like to add the new value to (ex: 0 10 or 1 4): ";
         cin >> arrayChoice;
         int newValue;
         cin >> newValue;
