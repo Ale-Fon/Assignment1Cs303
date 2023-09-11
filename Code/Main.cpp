@@ -75,16 +75,24 @@ int main() {
       break;
     case 'c':
     case 'C':
-      // This will add a new value to a row which the user entered.
-      cout << "Which row would you like to add the new value to (ex: 0 10 or 1 "
-              "4): ";
-      cin >> arrayChoice;
-      int newValue;
-      cin >> newValue;
-      adding(v, arrayChoice, newValue);
-      cout << "The brand new row is below!" << endl << endl;
-      printRow(v, rowN, rows);
-      break;
+     // This will add a new value to a row which the user entered.
+      //try{
+        cout << "Which row would you like to add the new value to (ex: 0 10 or 1 "
+                "4): ";
+        cin >> arrayChoice;
+        int newValue;
+        cin >> newValue;
+        adding(v, arrayChoice, newValue);
+        cout << "The brand new row is below!" << endl << endl;
+        printRow(v, rowN, rows);
+        break;
+      //}
+      //else{
+        //throw error;
+      //}
+      //catch(int errors){
+        //cout << "Cant seem to add" << errors << "Program will reset." << endl;
+      //}
     case 'd':
     case 'D':
       // Helps removing a value from a row.
