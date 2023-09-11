@@ -4,7 +4,6 @@
 void getRow(ifstream &inFile, vector<vector<int>> &v, int input1, int input2) {
   vector<int> row;
   int temp;
-
   for (int i = 0; i < input2; i++) {
     row.clear();
     for (int j = 0; j < input1; j++) {
