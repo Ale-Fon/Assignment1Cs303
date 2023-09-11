@@ -16,7 +16,6 @@ int main() {
   bool agains = true;
   vector<vector<int>> v;
 
-  cout << "Start of assignment 1, please wait." << endl << endl;
   // asking the user to input file name.
   cout << "Please enter file name below" << endl;
   cin >> inputFile;
