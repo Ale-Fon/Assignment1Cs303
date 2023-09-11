@@ -16,6 +16,7 @@ int main() {
   bool agains = true;
   vector<vector<int>> v;
 
+  cout << "Start of assignment 1, please wait." << endl << endl;
   // asking the user to input file name.
   cout << "Please enter file name below" << endl;
   cin >> inputFile;
@@ -60,7 +61,7 @@ int main() {
     case 'A':
       cout << "What index will you be using from the row: " << endl;
       cin >> arrayChoice;
-      checkIndex(v, arrayChoice, rowN, rows);
+      checkValue(v, arrayChoice, rowN, rows);
       again = true;
       break;
     case 'b':
@@ -68,14 +69,14 @@ int main() {
       // This changes the index in the row that the user entered.
       cout << "What index will you be using from the row: " << endl;
       cin >> arrayChoice;
-      changeIndexValue(v, arrayChoice, rowN, rows, temp);
+      changeValue(v, arrayChoice, rowN, rows, temp);
       cout << "Here is how the new row looks!" << endl;
       printRow(v, rowN, rows);
       break;
     case 'c':
     case 'C':
       // This will add a new value to a row which the user entered.
-      cout << "Which row would you like to add the new value to (ex: 0 10, 1 "
+      cout << "Which row would you like to add the new value to (ex: 0 10 or 1 "
               "4): ";
       cin >> arrayChoice;
       int newValue;
