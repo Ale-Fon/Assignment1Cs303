@@ -25,14 +25,14 @@ void printRow(vector<vector<int>> &v, int input1, int input2) {
   cout << endl;
 }
 // This function will check the index inside the rows.
-void checkIndex(vector<vector<int>> &v, int index, int input1, int input2) {
+void checkValue(vector<vector<int>> &v, int index, int input1, int input2) {
   transforming(index, input1, input2);
   cout << "The value in the index " << index << " is " << v[input2][input1]
        << endl
        << endl;
 }
 // This function will change the index value of the array that the user inputs.
-void changeIndexValue(vector<vector<int>> &v, int index, int input1, int input2, int &tempNum) {
+void changeValue(vector<vector<int>> &v, int index, int input1, int input2, int &tempNum) {
   transforming(index, input1, input2);
   int newIndex;
   cout << "What would you like to change this value into: ";
