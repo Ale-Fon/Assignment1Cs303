@@ -32,8 +32,7 @@ void checkIndex(vector<vector<int>> &v, int index, int input1, int input2) {
        << endl;
 }
 // This function will change the index value of the array that the user inputs.
-void changeIndexValue(vector<vector<int>> &v, int index, int input1, int input2,
-                      int &tempNum) {
+void changeIndexValue(vector<vector<int>> &v, int index, int input1, int input2, int &tempNum) {
   transforming(index, input1, input2);
   int newIndex;
   cout << "What would you like to change this value into: ";
